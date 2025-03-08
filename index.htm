@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenvolvedor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="welcome" class="screen">
+            <h1>Bem-vindo!</h1>
+            <label for="nome">Qual o seu nome?</label>
+            <input type="text" id="nome">
+            <button id="nome-btn">Próximo</button>
+        </div>
+
+        <div id="area" class="screen" style="display: none;">
+            <h1>Escolha a área:</h1>
+            <button id="front-end-btn">Front-end</button>
+            <button id="back-end-btn">Back-end</button>
+        </div>
+
+        <div id="linguagem-front" class="screen" style="display: none;">
+            <h1>Escolha a linguagem Front-end:</h1>
+            <button id="react-btn">React</button>
+            <button id="vue-btn">Vue</button>
+        </div>
+
+        <div id="linguagem-back" class="screen" style="display: none;">
+            <h1>Escolha a linguagem Back-end:</h1>
+            <button id="csharp-btn">C#</button>
+            <button id="java-btn">Java</button>
+        </div>
+
+        <div id="especializacao" class="screen" style="display: none;">
+            <h1>Especialização:</h1>
+            <button id="espec-front-btn">Front-end</button>
+            <button id="espec-back-btn">Back-end</button>
+            <button id="fullstack-btn">Fullstack</button>
+        </div>
+
+        <div id="tecnologia" class="screen" style="display: none;">
+            <h1>Tecnologias:</h1>
+            <label for="tecnologia-input">Qual tecnologia você quer aprender?</label>
+            <input type="text" id="tecnologia-input">
+            <button id="tecnologia-btn">Adicionar</button>
+            <button id="tecnologia-finalizar-btn">Finalizar</button>
+            <div id="tecnologias-lista"></div>
+        </div>
+
+        <div id="resultado" class="screen" style="display: none;">
+            <h1 id="resultado-titulo"></h1>
+            <p id="resultado-texto"></p>
+            <p id="tecnologias-aprendizado"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

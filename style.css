@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+    color:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(https://img.freepik.com/fotos-gratis/vista-traseira-do-programador-trabalhando-a-noite-toda_1098-18697.jpg );
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.screen {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#welcome h1{
+    font-size:5rem ;
+}
+
+#welcome label{
+    font-size: 20px;
+}
+
+#welcome input[type="text"]{
+    width: 10rem;
+    height: 1.3rem;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#resultado-titulo{
+    font-size: 3rem;
+}
+
+#resultado-texto{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Media Queries para ajustes responsivos */
+@media (min-width: 768px) {
+    body {
+        flex-direction: row; /* Volta para o layout horizontal em telas maiores */
+    }
+
+    #welcome h1 {
+        font-size: 5rem; /* Retorna o tamanho da fonte original em telas maiores */
+    }
+}
+
+@media (max-width: 480px) {
+    button {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+
+    #welcome input[type="text"] {
+        width: 90%;
+    }
+}
